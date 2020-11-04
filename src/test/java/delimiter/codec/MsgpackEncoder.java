@@ -18,7 +18,7 @@ public class MsgpackEncoder extends MessageToByteEncoder<Object> {
 
     public static void main(String[] args) throws IOException {
         UserInfo userInfo = new UserInfo();
-        userInfo.setUserName("hell");
+        userInfo.setUserName("hello");
         userInfo.setUserID(1);
         MessagePack messagePack = new MessagePack();
         final byte[] write = messagePack.write(userInfo);
